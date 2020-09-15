@@ -1,16 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Bio from './Bio.js';
-import Navigation from './Navigation.js'
+import Navigation from './structural/Navigation.js'
+import {
+    BrowserRouter as Router
+} from "react-router-dom";
+import RouterSwitch from './structural/RouterSwitch.js';
 
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <header className="App-header">
-        <Bio />
-      </header>
+        <Router>
+          <Navigation/>
+          <header className="App-header">
+              <RouterSwitch />
+          </header>
+        </Router>
     </div>
   );
 }
