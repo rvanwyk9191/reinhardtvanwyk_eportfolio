@@ -10,7 +10,7 @@ function RouterSwitch(){
     return (
         <Switch>
             <Route exact path={'/'} render={Bio}/>
-            <Route exact path={'/resume'} render={Resume}/>
+            <Route exact path={'/resume'}><Resume/></Route>
             <Route exact path={'/java'} render={Java}/>
             <Route exact path={'/javascript'} render={Javascript}/>
         </Switch>
