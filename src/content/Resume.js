@@ -1,11 +1,12 @@
 import React from 'react';
+import { Document } from 'react-pdf'
 import '../App.css';
 
 
 function Resume() {
     return (
         <div>
-            <h1>Future Resume Site</h1>
+            <Document file='./reinhardt_resume.pdf'/>
         </div>
     );
 }
