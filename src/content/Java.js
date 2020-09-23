@@ -1,10 +1,12 @@
 import React from 'react';
 import '../App.css';
+import Git from '../data/Git.js';
 
 function Java() {
+	const languageType = 'Java';
     return (
         <div>
-            <h1>Future Java Page</h1>
+            <Git projectType={languageType}/>
         </div>
     );
 }

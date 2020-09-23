@@ -6,13 +6,14 @@ import Resume from "../content/Resume";
 import Java from "../content/Java";
 import Javascript from "../content/Javascript";
 
+
 function RouterSwitch(){
     return (
         <Switch>
-            <Route exact path={'/'} render={Bio}/>
+            <Route exact path={'/'} render={Bio} />
             <Route exact path={'/resume'}><Resume/></Route>
             <Route exact path={'/java'} render={Java}/>
-            <Route exact path={'/javascript'} render={Javascript}/>
+            <Route exact path={'/javascript'} render={Javascript} />
         </Switch>
     );
 }
