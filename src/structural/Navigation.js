@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 
-
 function Navigation() {
   return (
 	<Navbar bg='light' expand='md'>

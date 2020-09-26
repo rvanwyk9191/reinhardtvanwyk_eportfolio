@@ -57,17 +57,26 @@ export default class Resume extends Component {
           previousButtonDisabled:false
         })
         break;
+      default:
+        this.setState({
+          page1Active: true,
+          page2Active: false,
+          page3Active: false,
+          nextButtonDisabled:false,
+          previousButtonDisabled:true
+        })
+        break;
     }
   }
 
   onPageNext = () => {
-    if(this.state.currentPage != this.state.numPages) {
+    if(this.state.currentPage !== this.state.numPages) {
       this.setState({currentPage: this.state.currentPage + 1});
     }
   }
 
   onPageBack = () => {
-    if(this.state.currentPage != 1)
+    if(this.state.currentPage !== 1)
       this.setState({currentPage:this.state.currentPage-1});
   }
 
@@ -76,7 +85,7 @@ export default class Resume extends Component {
   }
 
   render() {
-    const { file, currentPage, numPages } = this.state;
+    const { file, currentPage} = this.state;
     const paginationIndicatorsPrevious = {
       marginLeft:'27%'
     }
