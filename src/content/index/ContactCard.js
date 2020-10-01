@@ -25,6 +25,10 @@ const classes = makeStyles((theme) => ({
     }
 }));
 
+const cardActionStyling = {
+    textAlign: 'left',
+}
+
 function ContactCard() {
     return (
         <Card className={classes.root}>
@@ -43,7 +47,7 @@ function ContactCard() {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions style={cardActionStyling}>
                 <Button size="small" color="primary">
                     <Link className='nav-link' exact to={'/resume'}>Resume</Link>
                 </Button>
